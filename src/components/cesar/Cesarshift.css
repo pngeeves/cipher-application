@@ -1,0 +1,139 @@
+.cesar-body{
+    height: 100%;
+    background-image: url('../../assets/cesar-bkgd.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#cesarGroup{ 
+    padding:1.5rem;
+    padding-bottom: 13px;
+    background-color:#721e1f;
+    width:600px;
+    border: 1.5px solid rgba(0, 0, 0, 0.856);
+    box-shadow: 1px 1px 2px;
+}
+
+.cesar-header{
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+   
+}
+
+.cesar-header h1{
+    font-weight: 600; 
+    border: 2px solid #b49103;
+    width: 350px;
+    padding: 5px 0;
+    text-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.cesar-header h4{
+    margin: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.cesar-button{
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.cesar-btn:hover{
+    border: 1px solid aliceblue;
+}
+
+.cesar-button h4{
+    margin:0;
+}
+
+#info-icon{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#info-icon p{
+    font-size: 17px;
+    cursor: pointer; 
+    transition: 0.1s;
+    border-radius: 50%;
+    margin: 0;
+    width: 5%;
+    color: white;
+}
+
+#info-icon p:hover{
+    color:#caa203;
+}
+
+#shiftPic{
+    width:100%
+}
+
+.group-row-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.indv-col-1{
+    flex: 50%;
+    margin-right: 5px;
+}
+
+.indv-col-2{
+    margin-left: 5px;
+    flex: 50%;
+}
+
+@media only screen and (max-width: 1000px){
+    .cesar-body{
+        height: 120vh;
+    }
+    .sub{
+        height: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 610px){
+    #cesarGroup{ 
+        width:420px;
+    }
+    
+}
+
+@media only screen and (max-width: 530px){
+    #cesarGroup{ 
+        width:320px;
+    }
+    .group-row-1{
+        flex-direction: column;
+    }
+    .cesar-button{
+        font-size: 5px;
+    }
+    .indv-col-1{
+        margin-right: 0px;
+    }
+    .indv-col-2{
+        margin-left: 0px;
+    }
+    .cesar-header h1{
+        width: 280px;    
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #cesarGroup{ 
+        width:250px;
+    }
+    .btn{
+        font-size: 11px;
+    }
+    .cesar-header h1{
+        width: 250px;    
+    }
+}
